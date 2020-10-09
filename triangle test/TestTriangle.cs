@@ -1,27 +1,27 @@
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using Identify_triangle_dimensions;
 
 
-namespace triangle_test
+namespace Test_triangle
 {
-    public class triangle_test    
+    public partial class Test_triangle
     {
         [TestFixture]
-        public class triangle_test1
+        public class TestTriangle
         {
             [Test]
+
             public void Analyze_Input4and4and4_Output()
             {
                 int a = 4;
                 int b = 4;
                 int c = 4;
-                string expected = "Equilateral Triangle";
-                string actual = Triangle_solver.Analyze(a, b, c);
+                string expectedvalue = "Equilateral Triangle";
+                string actualvalue = Triangle_solver.Analyze(a, b, c);
 
-                Assert.AreEqual(expected, actual);
+                Assert.AreEqual(expectedvalue, actualvalue);
 
             }
-            /*
             [Test]
 
             public void Analyze_Input3and3and4_Output()
@@ -124,7 +124,7 @@ namespace triangle_test
 
                 Assert.AreEqual(expectedvalue, actualvalue);
 
-            }*/
+            }
         }
     }
 }

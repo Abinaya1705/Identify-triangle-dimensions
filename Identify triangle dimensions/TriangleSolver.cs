@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Identify_triangle_dimensions
 {
-    public static class Triangle_solver
+    public static class TriangleSolver
     {
-        public static string Analyze(int a,int b,int c)
+        public static string Analyze(int a, int b, int c)
         {
             if (a + b > c && b + c > a && c + a > b)
             {
@@ -14,30 +14,32 @@ namespace Identify_triangle_dimensions
                 if (a == b && b == c)
                 {
                     return "Equilateral Triangle";
-                }else if (a == b || b == c || c == a)
+                }
+                else if (a == b || b == c || c == a)
                 {
-                    return "Isoseles Triangle";
+                    return "Isosceles Triangle";
                 }
                 else
                 {
-                    return "Scalen triangle";
+                    return "scalene Triangle";
                 }
 
             }
             else
             {
-                return "It is not a Triangle";
+                return "Its not a Triangle";
             }
         }
     }
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
 

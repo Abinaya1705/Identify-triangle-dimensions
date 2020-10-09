@@ -4,7 +4,7 @@ namespace Identify_triangle_dimensions
 {
     class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
             string option;
             do
@@ -14,13 +14,13 @@ namespace Identify_triangle_dimensions
                 option = Console.ReadLine();
                 if (option == "1")
                 {
-                    Console.Write("Side 1 :");
-                    var side1 = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("Side 2 :");
-                    var side2 = Convert.ToInt32(Console.ReadLine());
-                    Console.Write("Side 3 :");
-                    var side3 = Convert.ToInt32(Console.ReadLine());
-                    var Result = Triangle_solver.Analyze(side1, side2, side3);
+                    Console.Write("a:");
+                    var a= Convert.ToInt32(Console.ReadLine());
+                    Console.Write("b:");
+                    var b = Convert.ToInt32(Console.ReadLine());
+                    Console.Write("c:");
+                    var c = Convert.ToInt32(Console.ReadLine());
+                    var Result = TriangleSolver.Analyze(a, b, c);
                     Console.WriteLine(Result);
                 }
                 if(option == "2")
